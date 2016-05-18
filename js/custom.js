@@ -5,7 +5,7 @@
 	=========================== */
 	$('.tooltips').tooltip({
 		selector: "a[data-toggle^=tooltip]"
-	})	
+	});
 
 	/* Client logo hover
 	=========================== */	
@@ -16,5 +16,19 @@
 	}, function() {
 				$(this).find('.logo-hover').stop().fadeTo(900, 0);
 				$(this).find('.client-logo').stop().fadeTo(900, 1);
-	});	
+	});
+
+	/* Tour scroll trigger
+	 =========================== */
+	$('#tour').click(function () {
+		$('html,body').animate({
+			scrollTop: $("#screenshot").offset().top
+		});
+	});
+
+
+
+
+
+
 })(jQuery);

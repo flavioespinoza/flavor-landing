@@ -1,41 +1,3 @@
-/* ==============================================================
-
-Template name : Meminz download software landing page v1.0.0
-Categorie : Landing page
-Author : Nce18cex
-Version : v1.0.0
-Created : 01 November 2014
-Last update : 16 November 2014
-
------------------------------------------------------------------
-CSS structure
------------------------------------------------------------------
-
-01. Home
-02. Contain
-03. Counter
-04. Testimoni
-05. Screenshot
-06. Pricing table
-07. Contact
-08. Client
-09. Download
-10. Loginand register form
-11. Footer
-12. Heading
-13. Pixeden icon setting
-14. Ui to top
-15. Loading
-16. Divider
-17. Clear spacer
-18. Custom top spacer
-19. Custom bottom spacer
-20. Custom left spacer
-21. Custom right spacer
-22. Custom responsive
-
-============================================================== */
-
 /*
 Home
 =========================== */
@@ -69,10 +31,6 @@ Home
 	background-image:url(../img/bg1.jpg);
 }
 
-.parallax.polygon-bg{
-	background-image:url(../img/polygon.jpg);
-}
-
 .home-contain{
 	padding:48px 0 0 0;
 	background:url(../img/pattern.png) repeat 0 0;
@@ -96,7 +54,7 @@ Home
 	float:left;
 	width:100%;
 	height:auto;
-	margin:40px 0 -325px 0;
+	margin:12px 0 -325px 0;
 }
 
 .slider-wrapper{
@@ -117,7 +75,7 @@ Contain
 }
 
 .contain.desc-wrapp{
-	padding-top:360px;
+	padding-top:560px;
 	padding-bottom:20px;
 }
 
@@ -126,7 +84,10 @@ Contain
 }
 
 .feature-box{
+  margin-top: 20px;
 	margin-bottom:60px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 .feature-box p{
@@ -144,11 +105,11 @@ Counter
 }
 
 .counter-contain{
-	padding:80px 0 80px 0;
-	background-color:rgba(26, 26, 26, 0.95);
-	color:#fff;
-	font-size:24px;
-	line-height:32px;
+	padding: 0 24px;
+	background-color: rgba(26, 26, 26, 0.95);
+	color: #fff;
+	font-size: 24px;
+	line-height: 32px;
 }
 
 .counter-contain h3{
@@ -231,7 +192,7 @@ Testimoni
 Screenshot
 =========================== */
 #screenshot{
-	padding:80px 0 130px 0;
+	padding:24px 0;
 	margin:0;
 }
 
@@ -245,12 +206,11 @@ Screenshot
 }
 
 .screenshot-wrapper{
-	position:absolute;
+	position:relative;
 	z-index: 5;	
-	width:755px;
+	width:1170px;
 	height:auto;
-	top:59px;
-	left:12px;
+  margin: 0 auto;
 }
 
 /*
@@ -1377,6 +1337,20 @@ Custom right spacer
 /*
 Custom responsive
 =========================== */
+@media (max-width: 1920px){
+  .contain.desc-wrapp {
+    padding-top: 360px;
+  }
+}
+
+
+@media (max-width: 1600px){
+  .screenshot-wrapper{
+    width:80%;
+  }
+}
+
+
 @media (min-width: 1200px){
 	.navbar-default .navbar-nav li a,
 	.navbar-default .navbar-nav li a:focus{
@@ -1389,13 +1363,8 @@ Custom responsive
 		top:38px;
 		left:38px;
 	}
-	.screenshot-wrapper{
-		width:917px;
-		top:73px;
-		left:14px;
-	}
 }
-@media (min-width: 768px) and (max-width: 990px){
+@media (min-width: 768px) and (max-width: 1024px){
 	.slider-wrapper{
 		width:662px;
 		top:30px;
@@ -1427,11 +1396,9 @@ Custom responsive
 	.video-wrapper{
 		padding:140px 0 0 0;
 	}
-	.screenshot-wrapper{
-		width:699px;
-		top:55px;
-		left:10px;
-	}
+  .screenshot-wrapper{
+    width: 80%;
+  }
 	.contain{
 		padding-top:140px
 	}
@@ -1505,8 +1472,6 @@ Custom responsive
 	}
 	.screenshot-wrapper{
 		width:97%;
-		top:12.5%;
-		left:1.5%;
 	}
 	.pricing-wrapper{
 		margin-bottom:30px;
@@ -1530,6 +1495,29 @@ Custom responsive
 	}
 }
 
+
+@media (max-width: 480px) {
+
+  .feature-box {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .home-contain {
+    padding-top: 24px;
+  }
+  .home-wrapper h3 {
+    font-size: 54px;
+  }
+
+  .btn-inline {
+    margin-bottom: 10px;
+  }
+
+  .btn-inline a {
+    margin-bottom: 24px;
+  }
+}
 /*
 Demo
 =========================== */
