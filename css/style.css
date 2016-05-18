@@ -75,7 +75,7 @@ Contain
 }
 
 .contain.desc-wrapp{
-	padding-top:360px;
+	padding-top:560px;
 	padding-bottom:20px;
 }
 
@@ -84,7 +84,10 @@ Contain
 }
 
 .feature-box{
+  margin-top: 20px;
 	margin-bottom:60px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 .feature-box p{
@@ -203,12 +206,11 @@ Screenshot
 }
 
 .screenshot-wrapper{
-	position:absolute;
+	position:relative;
 	z-index: 5;	
-	width:755px;
+	width:1170px;
 	height:auto;
-	top:59px;
-	left:12px;
+  margin: 0 auto;
 }
 
 /*
@@ -1335,6 +1337,20 @@ Custom right spacer
 /*
 Custom responsive
 =========================== */
+@media (max-width: 1920px){
+  .contain.desc-wrapp {
+    padding-top: 360px;
+  }
+}
+
+
+@media (max-width: 1600px){
+  .screenshot-wrapper{
+    width:80%;
+  }
+}
+
+
 @media (min-width: 1200px){
 	.navbar-default .navbar-nav li a,
 	.navbar-default .navbar-nav li a:focus{
@@ -1347,13 +1363,8 @@ Custom responsive
 		top:38px;
 		left:38px;
 	}
-	.screenshot-wrapper{
-		width:917px;
-		top:73px;
-		left:14px;
-	}
 }
-@media (min-width: 768px) and (max-width: 990px){
+@media (min-width: 768px) and (max-width: 1024px){
 	.slider-wrapper{
 		width:662px;
 		top:30px;
@@ -1385,11 +1396,9 @@ Custom responsive
 	.video-wrapper{
 		padding:140px 0 0 0;
 	}
-	.screenshot-wrapper{
-		width:699px;
-		top:55px;
-		left:10px;
-	}
+  .screenshot-wrapper{
+    width: 80%;
+  }
 	.contain{
 		padding-top:140px
 	}
@@ -1463,8 +1472,6 @@ Custom responsive
 	}
 	.screenshot-wrapper{
 		width:97%;
-		top:12.5%;
-		left:1.5%;
 	}
 	.pricing-wrapper{
 		margin-bottom:30px;
@@ -1488,6 +1495,29 @@ Custom responsive
 	}
 }
 
+
+@media (max-width: 480px) {
+
+  .feature-box {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .home-contain {
+    padding-top: 24px;
+  }
+  .home-wrapper h3 {
+    font-size: 54px;
+  }
+
+  .btn-inline {
+    margin-bottom: 10px;
+  }
+
+  .btn-inline a {
+    margin-bottom: 24px;
+  }
+}
 /*
 Demo
 =========================== */

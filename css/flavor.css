@@ -1,15 +1,25 @@
-#counter-wrapper .fa {
-  font-size: 24px;
-  padding: 18px;
-  margin-bottom: 96px; }
+#counter-wrapper {
+  position: relative; }
+  #counter-wrapper .fa {
+    font-size: 24px;
+    padding: 18px;
+    margin-bottom: 96px; }
+  #counter-wrapper .fa.fa-heart {
+    padding: 0;
+    padding-right: 8px;
+    margin-bottom: 0; }
+  #counter-wrapper a.text-green {
+    position: absolute;
+    bottom: 36px;
+    right: 36px; }
 
 #description .fa {
   font-size: 32px;
   line-height: 2; }
 
 .counter-contain .desc-feature {
-  font-size: 14px;
-  line-height: 32px; }
+  font-size: 18px;
+  line-height: 24px; }
 .counter-contain .pe-feature {
   background-color: #5CB85C; }
 
@@ -19,5 +29,9 @@
 h5 {
   font-size: 24px;
   line-height: 24px; }
+
+/* shadows */
+.card-shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.6), 0 1px 1px 0 rgba(0, 0, 0, 0.6), 0 2px 1px -1px rgba(0, 0, 0, 0.6); }
 
 /*# sourceMappingURL=flavor.css.map */
