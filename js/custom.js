@@ -5,7 +5,7 @@
 	=========================== */
 	$('.tooltips').tooltip({
 		selector: "a[data-toggle^=tooltip]"
-	})	
+	});
 
 	/* Client logo hover
 	=========================== */	

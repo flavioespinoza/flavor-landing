@@ -55,25 +55,6 @@
 
 <body>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Zipline 2.0</h4>
-      </div>
-      <div class="modal-body">
-        Slide show will go here
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Got it</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 <!-- End home -->
 <section id="home" class="home-wrapper parallax image-bg">
   <div class="home-contain">
@@ -84,19 +65,13 @@
 
           <p class="btn-inline">
             <a href="#" class="btn btn-bordered btn-lg zoom">Go to Zipline</a>
-            <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Take a tour</a>
-
+            <a href="#" id="tour" class="btn btn-primary btn-lg">Take a tour</a>
           </p>
 
-          <div class="home-slider">
+          <div id="homeSlider" class="home-slider">
             <div class="slider-wrapper">
               <div class="imac-device">
                 <ul class="slides">
-                  <li>
-                    <div class="video-container">
-                      <div class="youTubeEmbed"></div>
-                    </div>
-                  </li>
                   <li>
                     <a href="#"><img src="img/slider/img2.png" alt=""/></a>
                   </li>
@@ -123,200 +98,27 @@
 <!-- Start features -->
 <section id="features" class="contain desc-wrapp gray-bg">
   <div class="container">
-    <div class="row text-center wow fadeInUp" data-wow-delay="0.4s">
-      <div class="col-md-8 col-md-offset-2">
-        <h3 class="heading"><span>All new design</span>User experience features</h3>
-      </div>
-    </div>
     <div class="row wow fadeInDown" data-wow-delay="0.4s">
-      <div class="col-md-4 feature-box">
-        <i class="fa fa-phone pe-feature"></i>
-        <h5>Responsive design</h5>
 
-        <p>
-          Eu sit soluta antiopam, postea sanctus in an vis. Pro primis insolens recteque ne, nostrum molestie splendide
-          sed et elitr.
-        </p>
-        <!--<a href="#">Learn more</a>-->
-      </div>
-      <div class="col-md-4 feature-box">
-        <i class="fa fa-edit pe-feature"></i>
-        <h5>Easy to customize</h5>
 
-        <p>
-          Eu sit soluta antiopam, postea sanctus in an vis. Pro primis insolens recteque ne, nostrum molestie splendide
-          sed et elitr.
-        </p>
-        <!--<a href="#">Learn more</a>-->
-      </div>
-      <div class="col-md-4 feature-box">
-        <i class="fa fa-area-chart pe-feature"></i>
-        <h5>Modern design</h5>
-
-        <p>
-          Eu sit soluta antiopam, postea sanctus in an vis. Pro primis insolens recteque ne, nostrum molestie splendide
-          sed et elitr.
-        </p>
-        <!--<a href="#">Learn more</a>-->
-      </div>
-      <div class="col-md-4 feature-box">
-        <i class="fa fa-paper-plane pe-feature"></i>
-        <h5>Easy tools navigation</h5>
-
-        <p>
-          Eu sit soluta antiopam, postea sanctus in an vis. Pro primis insolens recteque ne, nostrum molestie splendide
-          sed et elitr.
-        </p>
-        <!--<a href="#">Learn more</a>-->
-      </div>
-      <div class="col-md-4 feature-box">
-        <i class="fa fa-share pe-feature"></i>
-        <h5>Faster support</h5>
-
-        <p>
-          Eu sit soluta antiopam, postea sanctus in an vis. Pro primis insolens recteque ne, nostrum molestie splendide
-          sed et elitr.
-        </p>
-        <!--<a href="#">Learn more</a>-->
-      </div>
-      <div class="col-md-4 feature-box">
-        <i class="fa fa-paperclip pe-feature"></i>
-        <h5>Training manual included</h5>
-
-        <p>
-          Eu sit soluta antiopam, postea sanctus in an vis. Pro primis insolens recteque ne, nostrum molestie splendide
-          sed et elitr.
-        </p>
-        <!--<a href="#">Learn more</a>-->
-      </div>
     </div>
   </div>
 </section>
 <!-- End features -->
 
-<div class="clearfix"></div>
-
-<!-- Start description -->
-<section id="description" class="contain">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7 wow fadeInLeft" data-wow-delay="0.4s">
-        <img src="img/device.png" class="img-responsive" alt=""/>
-      </div>
-      <div class="col-md-5 margintop40 wow fadeInRight" data-wow-delay="0.4s">
-        <div class="accordion clearfix" id="accordion1">
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                <i class="fa fa-gear"></i> Product feedback
-              </a>
-            </div>
-            <div id="collapse1" class="accordion-body collapse in">
-              <div class="accordion-inner">
-                <p>
-                  Sed modus munere menandri ad. Te ius vero qualisque concludaturque. Sed ne vide fastidii incorrupte,
-                  elitr soleat intellegebat eam at. Aperiri facilis in pro, vis idque harum ex, ex vocent utroque
-                  similique vix choro moderatius consequuntur sit te, has veri salutatus te. Labore graecis aliquando ad
-                  sed. Accusam constituto honestatis et eos.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                <i class="fa fa-calendar"></i> Arriving in June
-              </a>
-            </div>
-            <div id="collapse2" class="accordion-body collapse">
-              <div class="accordion-inner">
-                <p>
-                  Ea qui facete corpora honestatis. Eu sit soluta antiopam, postea sanctus incorrupte an vis. Pro primis
-                  insolens recteque no. Pro ei nostrum molestie splendide. Sed et elitr zril, harum euismod nam ad,
-                  velit sadipscing quo ad. Duo facer solet deleniti an, nec quis oportere efficiendi an, et regione
-                  principes comprehensam qui.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                <i class="fa fa-question"></i> Questions
-              </a>
-            </div>
-            <div id="collapse3" class="accordion-body collapse">
-              <div class="accordion-inner">
-                <p>
-                  Lorem ipsum dolor sit amet, eros accumsan intellegam cu eum, sed te docendi blandit. In primis
-                  lucilius mea, alii oratio numquam ei qui. Eam at quas mnesarchum. An adhuc consequat mel, usu in
-                  utroque dolorem. Nam diceret aliquam singulis no. Delenit temporibus scribentur eum eu. Labore graecis
-                  aliquando ad sed accusam constituto honestatis et eos.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End description -->
-
-<div class="clearfix"></div>
-
-<!-- Start counter -->
-<section id="counter-wrapper">
-  <div class="counter-contain">
-    <div class="container">
-      <div class="row text-center appear stats wow fadeInUp" data-wow-delay="0.4s">
-        <div class="col-md-12">
-          <h3>5000 users use Zipline each day</h3>
-
-          <p>Minimum albucius detraxit qui veniam equidem eum in constituam</p>
-        </div>
-      </div>
-      <div class="row text-center appear stats wow fadeInDown" data-wow-delay="0.4s">
-        <div class="col-md-2 col-md-offset-2">
-          <span id="counter-download" class="counter-number">1200</span>
-          <span class="counter-text">Mac user</span>
-        </div>
-        <div class="col-md-2">
-          <span id="counter-view" class="counter-number">625</span>
-          <span class="counter-text">Windows user</span>
-        </div>
-        <div class="col-md-2">
-          <span id="counter-android" class="counter-number">348</span>
-          <span class="counter-text">Android user</span>
-        </div>
-        <div class="col-md-2">
-          <span id="counter-ios" class="counter-number">227</span>
-          <span class="counter-text">IOS user</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End counter -->
 
 <div class="clearfix"></div>
 
 <!-- Start screenshot -->
-<section id="screenshot" class="contain">
-  <div class="container">
-    <div class="row text-center wow fadeInUp" data-wow-delay="0.4s">
-      <div class="col-md-10 col-md-offset-1 wow fadeInUp" data-wow-delay="0.4s">
-        <h3 class="heading"><span>Screen shot</span> Zipline's new look and feel</h3>
-      </div>
-    </div>
-  </div>
+<section id="screenshot">
+
   <div id="screenshot-contain" class="wow fadeInDown" data-wow-delay="0.4s">
     <div class="container">
       <div class="row text-center">
         <div class="col-md-10 col-md-offset-1">
           <div class="screenshot-slider">
             <div class="screenshot-wrapper">
-              <div class="flexslider text-center">
+              <div id="flexslider" class="flexslider" sync="flextext">
                 <ul class="slides">
                   <li>
                     <a href="#"><img src="img/screenshot/img1.png" alt=""/></a>
@@ -344,6 +146,159 @@
   </div>
 </section>
 <!-- End screenshot -->
+
+<!-- Start counter -->
+<section id="counter-wrapper">
+  <div id="flexslider--caption" class="counter-contain">
+
+    <ul class="slides">
+      <li>
+        <div class="row">
+          <div class="col-md-3 feature-box"></div>
+
+          <div class="col-md-6 feature-box">
+            <i class="fa fa-phone pe-feature text-white"></i>
+            <h5 class="text-white">Responsive design</h5>
+
+            <p class="desc-feature text-white">
+              Eu sit soluta antiopam, postea sanctus in an vis. Pro primis insolens recteque ne, nostrum molestie
+              splendide
+              sed et elitr.
+            </p>
+          </div>
+
+          <div class="col-md-3 feature-box"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="row">
+          <div class="col-md-3 feature-box"></div>
+
+          <div class="col-md-6 feature-box">
+            <i class="fa fa-phone pe-feature text-white"></i>
+            <h5 class="text-white">Next design</h5>
+
+            <p class="desc-feature text-white">
+              Eu sit soluta antiopam, postea sanctus in an vis. Pro primis insolens recteque ne, nostrum molestie
+              splendide
+              sed et elitr.
+            </p>
+          </div>
+
+          <div class="col-md-3 feature-box"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="row">
+          <div class="col-md-3 feature-box"></div>
+
+          <div class="col-md-6 feature-box">
+            <i class="fa fa-phone pe-feature text-white"></i>
+            <h5 class="text-white">Next design</h5>
+
+            <p class="desc-feature text-white">
+              Eu sit soluta antiopam, postea sanctus in an vis. Pro primis insolens recteque ne, nostrum molestie
+              splendide
+              sed et elitr.
+            </p>
+          </div>
+
+          <div class="col-md-3 feature-box"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="row">
+          <div class="col-md-3 feature-box"></div>
+
+          <div class="col-md-6 feature-box">
+            <i class="fa fa-phone pe-feature text-white"></i>
+            <h5 class="text-white">Next design</h5>
+
+            <p class="desc-feature text-white">
+              Eu sit soluta antiopam, postea sanctus in an vis. Pro primis insolens recteque ne, nostrum molestie
+              splendide
+              sed et elitr.
+            </p>
+          </div>
+
+          <div class="col-md-3 feature-box"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="row">
+          <div class="col-md-3 feature-box"></div>
+
+          <div class="col-md-6 feature-box">
+            <i class="fa fa-phone pe-feature text-white"></i>
+            <h5 class="text-white">Next design</h5>
+
+            <p class="desc-feature text-white">
+              Eu sit soluta antiopam, postea sanctus in an vis. Pro primis insolens recteque ne, nostrum molestie
+              splendide
+              sed et elitr.
+            </p>
+          </div>
+
+          <div class="col-md-3 feature-box"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="row">
+          <div class="col-md-3 feature-box"></div>
+
+          <div class="col-md-6 feature-box">
+            <i class="fa fa-phone pe-feature text-white"></i>
+            <h5 class="text-white">Next design</h5>
+
+            <p class="desc-feature text-white">
+              Eu sit soluta antiopam, postea sanctus in an vis. Pro primis insolens recteque ne, nostrum molestie
+              splendide
+              sed et elitr.
+            </p>
+          </div>
+
+          <div class="col-md-3 feature-box"></div>
+        </div>
+      </li>
+
+    </ul>
+
+
+    <!--<div class="container">-->
+    <!--<div class="row text-center appear stats wow fadeInUp" data-wow-delay="0.4s">-->
+    <!--<div class="col-md-12">-->
+    <!--<h3>5000 users use Zipline each day</h3>-->
+
+    <!--<p>Minimum albucius detraxit qui veniam equidem eum in constituam</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row text-center appear stats wow fadeInDown" data-wow-delay="0.4s">-->
+    <!--<div class="col-md-2 col-md-offset-2">-->
+    <!--<span id="counter-download" class="counter-number">1200</span>-->
+    <!--<span class="counter-text">Mac user</span>-->
+    <!--</div>-->
+    <!--<div class="col-md-2">-->
+    <!--<span id="counter-view" class="counter-number">625</span>-->
+    <!--<span class="counter-text">Windows user</span>-->
+    <!--</div>-->
+    <!--<div class="col-md-2">-->
+    <!--<span id="counter-android" class="counter-number">348</span>-->
+    <!--<span class="counter-text">Android user</span>-->
+    <!--</div>-->
+    <!--<div class="col-md-2">-->
+    <!--<span id="counter-ios" class="counter-number">227</span>-->
+    <!--<span class="counter-text">IOS user</span>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+  </div>
+</section>
+<!-- End counter -->
 
 
 <!-- Bootstrap core JavaScript

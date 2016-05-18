@@ -3,19 +3,40 @@
  */
 (function($) {
   'use strict';
-  $('.flexslider').flexslider({
-    animation: "slide",
-    directionNav: true,
-    controlNav: true,
-    slideshow: true,
-  });
 
   $('.imac-device').flexslider({
     animation: "slide",
     directionNav: false,
     controlNav: false,
     slideshow: true,
-    pausePlay: true,
-    mousewheel: true,
+    mousewheel: false
   });
+
+  $('#flexslider').flexslider({
+    animation: "slide",
+    animationLoop: true,
+    easing: "swing",
+    multipleKeyboard: true,
+    directionNav: true,
+    controlNav: false,
+    slideshow: false,
+    before: function(slider){
+      $('#flexslider--caption').flexslider(slider.animatingTo);
+    }
+  });
+
+  $('#flexslider--caption').flexslider({
+    animation: "slide",
+    animationLoop: true,
+    easing: "swing",
+    directionNav: false,
+    multipleKeyboard: true,
+    controlNav: false,
+    slideshow: false,
+    before: function(slider){
+      $('#flexslider').flexslider(slider.animatingTo);
+    }
+  });
+
+
 })(jQuery);

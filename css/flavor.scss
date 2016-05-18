@@ -1,4 +1,4 @@
-#features {
+#counter-wrapper {
   .fa {
     font-size: 24px;
     padding: 18px;
@@ -10,4 +10,23 @@
     font-size: 32px;
     line-height: 2;
   }
+}
+
+.counter-contain {
+  .desc-feature {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .pe-feature {
+    background-color: #5CB85C;
+  }
+}
+
+.text-white {
+  color: white !important;
+}
+
+h5 {
+  font-size: 36px;
+  line-height: 42px;
 }
